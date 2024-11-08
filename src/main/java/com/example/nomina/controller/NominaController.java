@@ -4,6 +4,9 @@ import org.antlr.v4.runtime.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "*", methods = {RequestMethod.GET, RequestMethod.POST})
+
+
 public class NominaController {
 
     @PostMapping("/calcular")
